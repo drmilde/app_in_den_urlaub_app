@@ -1,4 +1,4 @@
-import 'package:app_in_den_urlaub_app/screens/ziel_suche_screen.dart';
+import 'package:app_in_den_urlaub_app/screens/new_york_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
