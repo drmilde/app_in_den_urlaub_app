@@ -1,3 +1,4 @@
+import 'package:app_in_den_urlaub_app/screens/luebeck_screen.dart';
 import 'package:app_in_den_urlaub_app/screens/new_york_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: NewYorkScreen(),
+      //home: NewYorkScreen(),
+      home: LuebeckScreen(),
     );
   }
 }
