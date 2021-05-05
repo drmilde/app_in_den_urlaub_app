@@ -101,7 +101,7 @@ class LuebeckScreen extends StatelessWidget {
                     width: 250,
                     child: Text(
                         "Wir begrüßen Sie heute in unserem"
-                        " günstigen Design Hotel",
+                        " günstigen Design Hotel.",
                         maxLines: 2,
                         style: TextStyle(
                           fontSize: 14,
