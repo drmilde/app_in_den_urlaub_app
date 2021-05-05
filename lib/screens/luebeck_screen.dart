@@ -4,9 +4,16 @@ class LuebeckScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(),
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 48, 52, 113),
         title: Text("Ab in den Urlaub"),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.more_vert_outlined),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -77,7 +84,10 @@ class LuebeckScreen extends StatelessWidget {
                   CircleAvatar(
                     backgroundColor: Color.fromARGB(255, 48, 52, 113),
                     radius: 30,
-                    child: Icon(Icons.card_travel_outlined, size: 40,),
+                    child: Icon(
+                      Icons.card_travel_outlined,
+                      size: 40,
+                    ),
                   )
                 ],
               ),
@@ -89,11 +99,20 @@ class LuebeckScreen extends StatelessWidget {
                 children: [
                   Container(
                     width: 250,
-                    child: Text("1 Woche Halbpension ist teuer",
+                    child: Text(
+                        "1 Woche Halbpension ist teuer."
+                        " Mehr Text zur Beschreibung des Hotels.",
+                        maxLines: 2,
                         style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 14,
                         )),
                   ),
+                  Text("ab 350€",
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green,
+                      ))
                 ],
               ),
             )
@@ -130,8 +149,44 @@ class LuebeckScreen extends StatelessWidget {
     return Container(
       color: Color.fromARGB(255, 48, 52, 113),
       height: 50,
-      child: Placeholder(
-        fallbackHeight: 50,
+      width: double.infinity,
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              SizedBox(
+                width: 15,
+              ),
+              Icon(
+                Icons.search,
+                color: Colors.white,
+                size: 30,
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Text(
+                "Ziel / Region / Hotel",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 4,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Container(
+              color: Colors.white,
+              height: 1,
+              width: double.infinity,
+            ),
+          ),
+        ],
       ),
     );
   }
