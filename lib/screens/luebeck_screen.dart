@@ -52,8 +52,8 @@ class LuebeckScreen extends StatelessWidget {
           _buildInfoBox(context),
           _buildBlueBanner(
               context,
-              "Luxuriöses Anwesen gesucht"
-              " kshads kjahsd kajd adjkhasd"),
+              "Willkommen im ältesten Kaufmannsviertel"
+              " der Hansestadt Lübeck!"),
         ],
       ),
     );
@@ -100,8 +100,8 @@ class LuebeckScreen extends StatelessWidget {
                   Container(
                     width: 250,
                     child: Text(
-                        "1 Woche Halbpension ist teuer."
-                        " Mehr Text zur Beschreibung des Hotels.",
+                        "Wir begrüßen Sie heute in unserem"
+                        " günstigen Design Hotel",
                         maxLines: 2,
                         style: TextStyle(
                           fontSize: 14,
