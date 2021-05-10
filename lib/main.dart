@@ -1,4 +1,5 @@
 import 'package:app_in_den_urlaub_app/screens/main_screen.dart';
+import 'package:app_in_den_urlaub_app/screens/stadt_auswahl_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home: NewYorkScreen(),
-      home: MainScreen(),
+      home: StadtAuswahlScreen(),
     );
   }
 }
